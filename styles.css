@@ -86,3 +86,23 @@ canvas {
     height: 100%;
     pointer-events: none;
 }
+/* Media Queries */
+@media (max-width: 600px) {
+    .card {
+        margin-top: 10%; /* Giảm khoảng cách trên trên điện thoại */
+        padding: 15px; /* Giảm padding */
+        width: 90%; /* Đảm bảo card chiếm 90% chiều rộng */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Điều chỉnh kích thước chữ */
+    }
+
+    p {
+        font-size: 1em; /* Điều chỉnh kích thước chữ */
+    }
+
+    button {
+        padding: 10px 20px; /* Giảm kích thước nút */
+    }
+}
