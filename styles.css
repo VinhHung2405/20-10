@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.background {
+    background-image: url('https://example.com/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: backgroundAnimation 15s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% { filter: brightness(0.8); }
+    100% { filter: brightness(1); }
+}
+
+.card {
+    margin-top: 300px;
+    margin-left: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transform: translate(-50%, -50%); /* Điều chỉnh để trung tâm card nằm chính giữa */
+    transition: transform 0.3s, box-shadow 0.3s;
+   
+}
+
+.card:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+    width: 80%; /* Thay đổi kích thước hình ảnh */
+    max-width: 300px; /* Kích thước tối đa */
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #d63384;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #c82391;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+    color: #c82391;
+}
+.b2 {
+    color: #c82391;
+    font-weight: 800;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
